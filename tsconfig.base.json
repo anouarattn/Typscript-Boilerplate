@@ -1,0 +1,15 @@
+// Because you probably want all of your subprojects
+// to share the same compiler options, it's convenient to create a "base" tsconfig.json in your root
+// directory that subprojects tsconfig.jsons can extend
+
+{
+  "extends": "@tsconfig/recommended/tsconfig.json", // https://github.com/tsconfig/bases/
+  "compilerOptions": {
+    "outDir": "dist",
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "composite": true, // must be set to true if we are using multiple projects. This ensures certain options are enabled so that this project can be referenced and built incrementally for any project that depends on it.
+    "declaration": true //  forcing the corresponding .d.ts file to be generated, containing the project's types. This allows TypeScript to only build dependent projects when types are changed and not rebuild all the dependent projects all the time.
+  }
+}
