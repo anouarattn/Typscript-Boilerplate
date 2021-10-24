@@ -1,4 +1,8 @@
-export function randomString() {
-    return Math.floor((1 + Math.random()) * 0x10000).toString(16);
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.randomString = void 0;
+function randomString() {
+    return ";dddsddsdfsfdd";
 }
+exports.randomString = randomString;
 //# sourceMappingURL=utils.js.map

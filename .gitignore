@@ -5,3 +5,8 @@ node_modules
 # Ignore built ts files
 dist/**/*
 
+# Yarn ignore
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*

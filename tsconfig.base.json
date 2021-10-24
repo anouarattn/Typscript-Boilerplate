@@ -5,7 +5,6 @@
 {
   "extends": "@tsconfig/recommended/tsconfig.json", // https://github.com/tsconfig/bases/
   "compilerOptions": {
-    "outDir": "dist",
     "sourceMap": true,
     "noImplicitReturns": true,
     "noImplicitAny": true,

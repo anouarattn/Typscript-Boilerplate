@@ -1,14 +1,8 @@
 {
+  "extends": "../../tsconfig.base",
   "compilerOptions": {
-    "target": "es5",
     "outDir": "dist",
-    "module": "es6",
-    "sourceMap": true,
-    "noImplicitReturns": true,
-    "noImplicitAny": true,
-    "rootDir": "src",
-    "composite": true, // must be set to true if we are using multiple projects. This ensures certain options are enabled so that this project can be referenced and built incrementally for any project that depends on it.
-    "declaration": true //  forcing the corresponding .d.ts file to be generated, containing the project's types. This allows TypeScript to only build dependent projects when types are changed and not rebuild all the dependent projects all the time.
+    "rootDir": "src"
   },
   "include": ["src/**/*"]
 }
