@@ -1,4 +1,4 @@
-import { randomString } from "../../Shared/dist/utils";
+import { randomString } from "../../Shared/dist/utils.js";
 
 console.log(randomString());
-console.log("d");
+console.log("dnjddhddrrrrrrrrrrrrrrrrrrh");

@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const utils_1 = require("../../Shared/dist/utils");
-console.log((0, utils_1.randomString)());
-console.log("d");
+import { randomString } from "../../Shared/dist/utils.js";
+console.log(randomString());
+console.log("dnjddhddrrrrrrrrrrrrrrrrrrh");
 //# sourceMappingURL=person.js.map

@@ -4,14 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "serve dist/public",
-    "build": "tsc && yarn copy-files",
-    "copy-files": "cp -r ./src/public/ ./dist/"
+    "dev": "concurrently \"tsc -w\" \"copy-and-watch --watch src/**/*.{html,json} src/**/{fonts,images}/* dist/\""
   },
   "dependencies": {
     "shared-consify": "1.0.0",
     "vue": "^3.2.20"
   },
-  "repository": "git+https://github.com/anouarattn/consify.git"
+  "repository": "git+https://github.com/anouarattn/consify.git",
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "copy-and-watch": "^0.1.6",
+    "ts-node": "^10.4.0"
+  }
 }

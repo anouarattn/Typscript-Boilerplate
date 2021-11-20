@@ -3,6 +3,8 @@
   "references": [{ "path": "../shared" }],
   "include": ["src/**/*"],
   "compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
     "rootDir": "src",
     "outDir": "dist",
     "composite": true, // must be set to true if we are using multiple projects. This ensures certain options are enabled so that this project can be referenced and built incrementally for any project that depends on it.
